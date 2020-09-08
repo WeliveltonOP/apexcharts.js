@@ -679,6 +679,11 @@ export default class ApexCharts {
     return exp.dataURI()
   }
 
+  svgUrl() {
+    const exp = new Exports(this.ctx)
+    return exp.svgUrl()
+  }
+
   paper() {
     return this.w.globals.dom.Paper
   }
